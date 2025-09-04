@@ -1,0 +1,761 @@
+  html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content {
+    flex: 1;
+    margin-top: 60px;
+  }
+
+  body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+  }
+
+  .header {
+    background-color: #000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    width: 98%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+
+
+  .menu {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 80px;
+    padding-left: 100px;
+  }
+
+  .menu-left,
+  .menu-right {
+    display: flex;
+    gap: 30px;
+  }
+
+  .menu-item {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .menu-item:hover {
+    color: #FF9E00;
+  }
+
+  .logo {
+    margin: 0 40px;
+  }
+
+  .logo img {
+    height: 200px;
+  }
+
+  .language-switcher {
+    display: flex;
+    align-items: center;
+  }
+
+  .language-switcher a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+
+  .home-section1 {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    background-color: #0b0b0b;
+  }
+
+  .home-section1-content {
+    color: white;
+    z-index: 2;
+    max-width: 90%;
+    padding-left: 50px;
+  }
+
+  .home-section1-content h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+  .cta-button {
+    padding: 12px 28px;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    border: 2px solid #FF9E00;
+    cursor: pointer;
+  }
+
+  .cta-button:hover {
+    box-shadow: 0 0 50px rgba(255, 158, 0, 0.8); 
+    border-color: #FF9E00; 
+  }
+
+  .home-section2 {
+    height: 450px;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    padding-top: 10px;
+  }
+  .home-section2-content {
+    text-align: center;
+  }
+  .idea {
+    display: flex;
+    margin-left: 350px;
+    margin-right: 350px;
+  }
+  .idea img {
+    width: 65px;
+  }
+  .idea h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+  }
+  .idea p {
+    text-align: left;
+    margin-left: 20px;
+    color: white;
+  }
+  .modernity {
+    display: flex;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 20px;
+  }
+  .modernity img {
+    width: 65px;
+  }
+  .modernity h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+  }
+  .modernity p {
+    text-align: left;
+    margin-left: 20px;
+    color: white;
+  }
+  .hidden {
+    display: none;
+  }
+  .read-more {
+    margin-top: 50px;
+  }
+  .home-section3 {
+    height: 650px;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    padding-top: 50px;
+  }
+  .home-section3-content {
+    text-align: center;
+    justify-content: center;
+  }
+  .slider-container {
+    max-width: 1200px;
+    overflow-x: hidden;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.6s ease;
+  }
+  
+  .slide {
+    flex: 0 0 400px;
+    height: 600px;
+    background: #f2f2f2;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    opacity: 0.5;
+    transition: opacity 0.6s ease;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  .indicator-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .indicator-line {
+    width: 50px;
+    height: 4px;
+    background: white;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+  
+  .indicator-line.active {
+    opacity: 1;
+  }
+  .slide-1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../images/Sunset\ with\ dji\ mini\ 3\ pro.jpeg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .slide1-btn{
+    margin-top: 260px;
+  }
+  .slide-2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../images/Wall-E.jpeg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .slide2-btn{
+    margin-top: 280px;
+  }
+  .slide-3{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../images/Highly\ detailed\ microchip.jpeg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
+  .slide3-btn{
+    margin-top: 230px;
+  }
+  .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    transition: background 0.3s ease;
+  }
+  
+  .slider-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+  .courses-section1{
+    background-color: black;
+  }
+  .courses-section1-content{
+    padding-top: 100px;
+    display: flex;
+    text-align: center;
+    color: white;
+  }
+  .drone-operator{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../images/Sunset\ with\ dji\ mini\ 3\ pro.jpeg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 750px;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;      
+    align-items: center;
+    padding: 15px;
+  }
+  .robotics{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../images/Wall-E.jpeg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  .arduino{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../images/Highly\ detailed\ microchip.jpeg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+  }
+  #drone-operator{
+    background-image: url("../images/ChatGPT\ Image\ Aug\ 16\,\ 2025\,\ 03_26_37\ PM.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .drone-operator-section1{
+    display: flex;
+  }
+  .drone-operator-section1-content{
+    padding-top: 350px;
+  }
+  .drone-operator-section1-content h1{
+    font-size: 60px;
+  }
+  .drone-operator-section1-content p{
+    font-size: 25px;
+    margin-left: 50px;
+  }
+  .drone-operator-section1-content h2{
+    font-size: 30px;
+    margin-left: 50px;
+  }
+  .drone-operator-section2-content h1{
+    font-size: 60px;
+  }
+  .drone-operator-section2-content p{
+    font-size: 25px;
+  }
+  .discount-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 25px;
+  }
+  .discount-table th, 
+  .discount-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+  }
+  
+  .discount-table thead th {
+    background-color: #f47c26;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .discount-table tbody tr:nth-child(even) {
+    background-color: #fdf6f1;
+  }
+  #robotics{
+    background-image: url("../images/ChatGPT\ Image\ Aug\ 16\,\ 2025\,\ 03_26_37\ PM.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .robotics-section1{
+    display: flex;
+  }
+  .robotics-section1-content{
+    padding-top: 350px;
+  }
+  .robotics-section1-content h1{
+    font-size: 60px;
+  }
+  .robotics-section1-content p{
+    font-size: 25px;
+    margin-left: 50px;
+  }
+  .robotics-section1-content h2{
+    font-size: 30px;
+    margin-left: 50px;
+  }
+  .robotics-section2-content h1{
+    font-size: 60px;
+  }
+  .robotics-section2-content p{
+    font-size: 25px;
+  }
+  #arduino{
+    background-image: url("../images/ChatGPT\ Image\ Aug\ 16\,\ 2025\,\ 03_26_37\ PM.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .arduino-section1{
+    display: flex;
+  }
+  .arduino-section1-content{
+    padding-top: 350px;
+  }
+  .arduino-section1-content h1{
+    font-size: 60px;
+  }
+  .arduino-section1-content p{
+    font-size: 25px;
+    margin-left: 50px;
+  }
+  .arduino-section1-content h2{
+    font-size: 30px;
+    margin-left: 50px;
+  }
+  .arduino-section2-content h1{
+    font-size: 60px;
+  }
+  .arduino-section2-content p{
+    font-size: 25px;
+  }
+  .overlay-img {
+    position: absolute;
+    width: 150px;   
+    pointer-events: none; 
+    z-index: 5;
+    transition: transform 0.1s linear;
+  }
+  .img-left {
+    left: 50px;
+    top: 350px;
+  }
+  .img-right {
+    right: 50px;
+    top: 450px;
+  }
+  .home-section2,
+  .home-section3 {
+    position: relative;
+    overflow: hidden;
+  }
+  .contact-section1 {
+    background: #111;
+    color: white;
+    text-align: center;
+  }
+  
+  .contact-section1 h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #FF9E00;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #FF9E00;
+    box-shadow: 0 0 6px rgba(255, 158, 0, 0.5);
+  }
+  
+  .contact-form .send-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .contact-section1-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  
+  .contact-container {
+    flex: 1;
+  }
+  
+  .map-section {
+    flex: 1;
+    height: 600px;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .contact-section2 {
+    background: #111;
+    height: 200px;
+  }
+  .contact-section2-content{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+  .contact-icons{
+    width: 100px;
+  }
+  .footer {
+    background: #111;
+    color: white;
+    padding: 20px 40px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-left p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .footer-center{
+    display: flex;
+  }
+
+  .footer-center-left{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-center-right{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: 40px;
+  }
+
+  .footer-center a {
+    margin: 0 12px;
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .footer-center a:hover {
+    color: #FF9E00;
+  }
+  
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .footer-right-top{
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+
+  .footer-right-bottom{
+    display: flex;
+    gap: 10px;
+  }
+
+  .footer-logo{
+    width: 250px;
+  }
+
+  .footer-icons{
+    width: 40px;
+  }
+  .address,
+  .call,
+  .mail{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .information-icon{
+    width: 30px;
+    height: 30px;
+  }
+
+  .programs-section1{
+    background-color: black;
+  }
+  .programs-section1-content{
+    padding-top: 100px;
+    display: flex;
+    text-align: center;
+    color: white;
+  }
+  .give-a-chance{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../images/jpeg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 750px;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;      
+    align-items: center;
+    padding: 15px;
+    width: 950px;
+  }
+  .give-a-drone{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../images/Sunset\ with\ dji\ mini\ 3\ pro.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 950px;
+  }
+  .mySlides{
+    display: none;
+  }
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  .mySlides img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .mySlides:nth-of-type(5) img {
+    object-position: top;
+  }
+  .give-a-chance-section1{
+    background-color: #000;
+    text-align: left;
+    color: white;
+    padding: 80px;
+  }
+  .give-a-chance-section1-content{
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 50px;
+  }
+  .give-a-chance-section1-content h3{
+    font-weight: lighter;
+    font-style: italic;
+  }
+  .give-a-chance-section1-content h1, h2{
+    color: #FF9E00;
+  }
+  .give-a-chance-section1-content p{
+    width: 1300px;
+    line-height: 2;
+  }
+  .term{
+    font-size: 14px;
+  }
